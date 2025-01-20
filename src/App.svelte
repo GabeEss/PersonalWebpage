@@ -1,15 +1,9 @@
 <script lang="ts">
-  
+  import Header from './lib/components/header.svelte';
+  import About from './lib/sections/about.svelte';
 </script>
 
 <main>
-  <header>
-    <nav>
-        <ul>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-  </header>
+  <Header/>
+  <About/>
 </main>
