@@ -1,5 +1,14 @@
 :root {
-	
+    --color-primary: #000000;
+    --color-secondary: #d3c500;
+    
+    --color-bg-dark: #ede4fb;
+    --color-bg-light: #ffffff;
+
+	--icon-size-s: 16px;
+	--icon-size-m: 24px;
+	--icon-size-l: 32px;
+	--icon-size-xl: 60px;
 }
 
 @media screen and (max-width: 1024px) {

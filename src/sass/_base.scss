@@ -4,7 +4,12 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'FriendlySansFont';
+	src: url('/src/assets/fonts/friendly-sans-font/FriendlySans-8OxvB.ttf') format('truetype');
+}
+
 :root {
 	font-size: 16px;
-	font-family: 'Courier New';
+	font-family: 'Tahoma';
 }
