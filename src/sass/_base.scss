@@ -1,7 +1,20 @@
 * {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+:global(html, body) {     
+    margin: 0px;
+    padding: 0px;
+	border: 0px;
 	box-sizing: border-box;
+}
+
+main {
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	gap: 0px;
 }
 
 @font-face {
