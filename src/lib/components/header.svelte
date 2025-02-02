@@ -46,8 +46,9 @@
 
   .logo-container a p {
     font-family: 'FriendlySansFont';
-    height: var(--icon-size-m);
-    width: var(--icon-size-m);
+    font-size: var(--icon-size-l);
+    height: var(--icon-size-l);
+    width: var(--icon-size-l);
     color: var(--color-primary);
     transition: all 0.2s ease-in-out;
     content: none;
@@ -80,13 +81,21 @@
     display: flex;
     gap: var(--spacing-m);
 
-    // &::after {
-    //   align-self: center;
-    //   content: '';
-    //   width: 70px;
-    //   height: 2px;
-    //   background: var(--color-primary);
-    // }
+    &::after {
+      align-self: center;
+      content: '';
+      width: 70px;
+      height: 2px;
+      background: var(--color-primary);
+    }
+
+    &::before {
+      align-self: center;
+      content: '';
+      width: 70px;
+      height: 2px;
+      background: var(--color-primary);
+    }
   }
 
 </style>

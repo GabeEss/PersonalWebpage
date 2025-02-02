@@ -3,10 +3,17 @@
 </script>
 
 <section>
-    <p class="greeting-name">My name is</p>
-    <h1>Gabriel Sliwowicz</h1>
+    <p class="greeting-hello">Hey!</p>
+    <div class="greeting-name">
+        <p>My name is</p>
+        <h1>Gabriel Sliwowicz</h1>
+    </div>
     <img src="/src/assets/me_pic.png" alt="Gabe Ess profile">
-    <p class="greeting-info">I'm a Frontend Developer from Toronto with a passion for building applications.</p>
+    <div class="greeting-info">
+        <p>I'm a Frontend Developer from Toronto with a passion for building 
+            <a class="greeting-cool" target="_blank" rel="noopener noreferrer" href="https://github.com/GabeEss">cool stuff</a>
+        </p>
+    </div>
 </section>
 
 <style>
@@ -33,20 +40,26 @@
         color: var(--color-primary);
         grid-row: 2/9;
         grid-column: 3/9;
+        letter-spacing: var(--letter-spacing-m);
     }
 
-    .greeting-one {
-        
-    }
-
-    .greeting-two {
-        font-size: var(--font-size-h3);
-        color: var(--color-primary);
+    .greeting-hello {
+        grid-row: 4/9;
+        grid-column: 3/9;
+        font-size: var(--font-size-h1);
+        color: var(--color-secondary);   
+        letter-spacing: var(--letter-spacing-m);
     }
 
     .greeting-info {
-        grid-column: 2/5;
-        grid-row: 9/9;
+        display: flex;
+        align-items: center;
+        gap: var();
+        font-size: var(--font-size-h4);
+        color: var(--color-primary);
+        grid-column: 3/5;
+        grid-row: 5/7;
+        letter-spacing: var(--letter-spacing-m);
     }
 
     h1 {
@@ -56,14 +69,31 @@
 		font-weight: bold;
 		padding: var(--spacing-s) 0;
         grid-row: 5/9;
-        grid-column: 6/9;
+        grid-column: 8/9;
 	}
 
+    a {
+        text-decoration: underline;
+        text-decoration-color: var(--color-secondary);
+        text-underline-offset: var(--spacing-xs);
+        color: var(--color-primary);
+        transition: all 0.2s ease-in-out;
+        content: none;
+        display: inline-block;
+        &:hover {
+            transform: scale(2.50) translateY(var(--font-size-small)) translateX(var(--font-size-small));
+            color: var(--color-secondary);
+            text-decoration-color: var(--color-primary);
+            z-index: 100;
+		}
+    }
+
     img {
+        padding-left: 2em;
         position: relative;
-		width: 45vh;
-		grid-column: 4 / 6;
-		grid-row: 4/9;
+		width: 58vh;
+		grid-column: 5 / 8;
+		grid-row: 2/9;
 		justify-content: end;
     }
 
