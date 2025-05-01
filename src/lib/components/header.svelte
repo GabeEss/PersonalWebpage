@@ -32,7 +32,7 @@
   @use '../../sass/main';
 
   header{
-    background-color: var(--color-bg-dark);
+    // background-color: var(--color-bg-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,26 +53,43 @@
     transition: all 0.2s ease-in-out;
     content: none;
     
-
+    
     &:hover {
 				transform: scale(1.10);
-				
 				color: var(--color-secondary);
         font-weight: 300;
-				
 			}
   }
+
+  .socials a {
+    transition: .4s ease-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+  &:hover{
+    border-bottom: 2px solid black;
+  }
+}
 
   svg{
     height: var(--icon-size-m);
     width: var(--icon-size-m);
     fill: var(--color-primary);
-    transition: all 0.2s ease-in-out;
-
+    transition: all .4s ease-out;
+    animation: bounce 2s infinite ease-out;
+    
     &:hover {
 				transform: scale(1.10);
-				fill: var(--color-secondary);
-			}
+        animation: none;
+		}
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
   }
 
   

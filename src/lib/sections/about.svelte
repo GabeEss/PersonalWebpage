@@ -3,22 +3,21 @@
 </script>
 
 <section>
-    <p class="greeting-hello">Hey!</p>
+    <!-- <p class="greeting-hello">Hey!</p>
     <div class="greeting-name">
         <p>My name is</p>
         <h1>Gabriel Sliwowicz</h1>
     </div>
-    <img src="/src/assets/me_pic.png" alt="Gabe Ess profile">
     <div class="greeting-info">
         <p>I'm a Frontend Developer from Toronto with a passion for building 
             <a class="greeting-cool" target="_blank" rel="noopener noreferrer" href="https://github.com/GabeEss">cool stuff</a>
         </p>
-    </div>
+    </div> -->
 </section>
 
 <style>
     section{
-        background-color: var(--color-bg-dark);
+        /* background-color: var(--color-bg-dark); */
         width: 100%;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
