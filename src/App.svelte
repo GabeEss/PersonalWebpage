@@ -1,12 +1,11 @@
 <script lang="ts">
   import Header from './lib/components/header.svelte';
-  import About from './lib/sections/about.svelte';
+  import Content from './lib/components/content.svelte';
 </script>
 
 <main>
-  <div class="left-half"></div>
   <Header/>
-  <About/>
+  <Content/>
 </main>
 
 <style lang="scss">
