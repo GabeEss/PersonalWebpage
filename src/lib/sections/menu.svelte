@@ -1,12 +1,12 @@
 <script lang="ts">
-
+    export let selectedSection: string;
 </script>
 
 <nav>
     <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about" on:click={() => selectedSection = 'about'}>About</a></li>
+        <li><a href="#skills" on:click={() => selectedSection = 'skills'}>Skills</a></li>
+        <li><a href="#projects" on:click={() => selectedSection = 'projects'}>Projects</a></li>
     </ul>
 </nav>
 

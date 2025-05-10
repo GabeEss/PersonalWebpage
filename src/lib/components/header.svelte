@@ -10,7 +10,7 @@
   
 <header>
   <div class="logo-container">
-    <!-- <a target="_blank" rel="noopener noreferrer" href={currentUrl}><p>GS</p></a> -->
+    <a target="_blank" rel="noopener noreferrer" href={currentUrl}><p>GS</p></a>
   </div>
   <div class="socials">
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/GabeEss">
@@ -58,20 +58,10 @@
     border-bottom: 2px solid transparent;
     padding-bottom: 5px;
         &:hover {
-                animation: rotate 1.5s infinite ease-in-out;;
+                animation: bounce 1.5s infinite ease-in-out;;
 				        color: var(--color-secondary);
                 font-weight: 300;
-                border-bottom: 2px solid black;
 			}
-    }
-
-    @keyframes rotate {
-        0%, 100% {
-          transform: translateY(0) rotate(-2deg) scale(1.1);
-        }
-        50% {
-            transform: translateY(-2px) rotate(2deg);
-        }
     }
 
   .socials a {
