@@ -52,14 +52,27 @@
     color: var(--color-primary);
     transition: all 0.2s ease-in-out;
     content: none;
-    
-    
-    &:hover {
-				transform: scale(1.10);
-				color: var(--color-secondary);
-        font-weight: 300;
+    display: inline-block;
+    transform: rotate(-2deg);
+    transition: .4s ease-out;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+        &:hover {
+                animation: rotate 1.5s infinite ease-in-out;;
+				        color: var(--color-secondary);
+                font-weight: 300;
+                border-bottom: 2px solid black;
 			}
-  }
+    }
+
+    @keyframes rotate {
+        0%, 100% {
+          transform: translateY(0) rotate(-2deg) scale(1.1);
+        }
+        50% {
+            transform: translateY(-2px) rotate(2deg);
+        }
+    }
 
   .socials a {
     transition: .4s ease-out;
