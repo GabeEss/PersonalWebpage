@@ -10,7 +10,7 @@
   
 <header>
   <div class="logo-container">
-    <a target="_blank" rel="noopener noreferrer" href={currentUrl}><p>GS</p></a>
+    <!-- <a target="_blank" rel="noopener noreferrer" href={currentUrl}><p>GS</p></a> -->
   </div>
   <div class="socials">
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/GabeEss">

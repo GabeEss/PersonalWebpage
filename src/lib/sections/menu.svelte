@@ -34,13 +34,13 @@
         display: inline-block;
         transform: rotate(-2deg);
         transition: .4s ease-out;
-        border-bottom: 2px solid transparent;
-        padding-bottom: 5px;
+        padding: 5px;
+        border-bottom: black 2px solid;
         &:hover {
                 animation: rotate 1.5s infinite ease-in-out;;
 				color: var(--color-secondary);
                 font-weight: 300;
-                border-bottom: 2px solid black;
+                background-color: black;
 			}
     }
 
