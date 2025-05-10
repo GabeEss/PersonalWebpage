@@ -12,7 +12,8 @@
   @use './sass/main.scss';
 
   main {
-    background: linear-gradient(120deg, var(--color-bg-dark) 45%, var(--color-bg-light) 0%);
+    position: relative;
+    background: linear-gradient(120deg, var(--color-bg-dark) 42%, black 42%, black 42.2%, var(--color-bg-light) 0%);
   }
 
   @media screen and (max-width: 1080px) {
