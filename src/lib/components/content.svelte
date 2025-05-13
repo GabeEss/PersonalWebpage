@@ -8,17 +8,15 @@
 
 <div class="content">
     <Menu bind:selectedSection/>
-    <div class="content-container">
-        {#if selectedSection === 'about'}
-        <About/>
-        {/if}
-        {#if selectedSection === 'projects'}
-        <Projects/>
-        {/if}
-        {#if selectedSection === 'skills'}
-        <Skills/>
-        {/if}
-    </div>
+    {#if selectedSection === 'about'}
+    <About/>
+    {/if}
+    {#if selectedSection === 'projects'}
+    <Projects/>
+    {/if}
+    {#if selectedSection === 'skills'}
+    <Skills/>
+    {/if}
 </div>
 
 <style>
@@ -29,10 +27,5 @@
         grid-template-rows: repeat(8, 1fr);
         overflow-x: hidden;
         height: 100vh;
-    }
-
-    .content-container {
-        grid-column: 4/9;
-        grid-row: 5/9;
     }
 </style>
