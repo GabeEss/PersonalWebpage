@@ -1,8 +1,8 @@
 <section id="about">
     <h2 class="about-header">About Me</h2>
-    <p class="about-name">My name is Gabe.</p>
+    <p class="about-name">Hello, I'm Gabe S!</p>
     <p class="about-greeting1"> I am a self-taught software developer from Toronto, Canada.</p>
-    <p class="about-greeting2">I’m a front-end developer who loves building cool stuff with React. Take a look at some of the projects I've built or some of the skills I've picked up.</p>
+    <p class="about-greeting2">I love building cool stuff with React. Take a look at some of the projects I've built or some of the skills I've picked up.</p>
 </section>
 
 <style lang="scss">
@@ -33,5 +33,21 @@
     .about-greeting2 {
         grid-row: 4/6;
         grid-column: 2/6;
+    }
+
+    h2 {
+        letter-spacing: var(--letter-spacing-l);
+        text-decoration: none;
+        font-family: 'FriendlySansFont';
+        font-size: var(--font-size-h2);
+        color: var(--color-primary);
+    }
+
+    p {
+        letter-spacing: var(--letter-spacing-l);
+        text-decoration: none;
+        font-family: 'FriendlySansFont';
+        font-size: var(--font-size-h3);
+        color: var(--color-primary);
     }
 </style>
