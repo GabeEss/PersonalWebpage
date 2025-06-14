@@ -59,8 +59,8 @@
             background: linear-gradient(
                 90deg,
                 black,
-                black,
-                rgb(245 245 220 / 50%),
+                rgb(245 245 220 / 80%),
+                rgb(245 245 220 / 80%),
                 black
             );
             background-size: 200% 100%;
