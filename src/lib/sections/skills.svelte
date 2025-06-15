@@ -1,22 +1,43 @@
 <script lang="ts">
+    import { onMount } from "svelte";
     import ReactIcon from "../../assets/icons/react-icon.svelte";
     import JavascriptIcon from "../../assets/icons/javascript-icon.svelte";
     import HtmlIcon from "../../assets/icons/html-icon.svelte";
     import CssIcon from "../../assets/icons/css-icon.svelte";
     import NodejsIcon from "../../assets/icons/nodejs-icon.svelte";
     import MongodbIcon from "../../assets/icons/mongodb-icon.svelte";
+    import SvelteIcon from "../../assets/icons/svelte-icon.svelte";
+    import TypescriptIcon from "../../assets/icons/typescript-icon.svelte";
+
+    let loaded = false;
+
+    onMount(() => {
+        loaded = true;
+    })
+
+    function handleAnimationEnd() {
+        loaded = false;
+    }
 </script>
 
 <section id="skills">
     <h2 class="skills-header">Things I've Learned</h2>
     <nav class="skills-list">
         <ul>
-            <li><ReactIcon/></li>
-            <li><JavascriptIcon/></li>
-            <li><HtmlIcon/></li>
-            <li><CssIcon/></li>
-            <li><NodejsIcon/></li>
-            <li><MongodbIcon/></li>
+            <li class={loaded ? 'animate one' : ''}>
+                <a target="_blank" href="https://react.dev/"><ReactIcon/></a></li>
+            <!-- <li><SvelteIcon/></li> -->
+            <li class={loaded ? 'animate two' : ''}>
+                <a target="_blank" href="https://tc39.es/"><JavascriptIcon/></a></li>
+            <!-- <li><TypescriptIcon/></li> -->
+            <li class={loaded ? 'animate three' : ''}>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><HtmlIcon/></a></li>
+            <li class={loaded ? 'animate four' : ''}>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><CssIcon/></a></li>
+            <li class={loaded ? 'animate five' : ''}>
+                <a target="_blank" href="https://nodejs.org/en"><NodejsIcon/></a></li>
+            <li class={loaded ? 'animate six' : ''} on:animationend={handleAnimationEnd}>
+                <a target="_blank" href="https://www.mongodb.com/"><MongodbIcon/></a></li>
         </ul>
     </nav>
 </section>
@@ -24,10 +45,92 @@
 <style lang="scss">
     @use '../../sass/main.scss';
     #skills {
+        animation: fade .5s ease-in;
         grid-row: 2/9;
         grid-column: 5/9;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);
+    }
+
+    .skills-header {
+        grid-row: 2/6;
+        grid-column: 2/6;
+    }
+
+    .skills-list {
+        grid-row: 3/6;
+        grid-column: 1/6;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animate {
+        animation: initialBounce 1s ease-in-out forwards;
+
+    }
+
+    .one {
+        animation-delay: .1s;
+    }
+
+    .two {
+        animation-delay: .3s;
+    }
+
+    .three {
+        animation-delay: .5s;
+    }
+
+    .four {
+        animation-delay: .7s;
+    }
+
+    .five {
+        animation-delay: .9s;
+    }
+
+    .six {
+        animation-delay: 1.1s;
+    }
+
+    ul li:not(.animate) {
+        &:hover {
+            animation: hover .4s ease 1 forwards;
+        }
+    }
+
+    @keyframes initialBounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes hover {
+        100% {
+            transform: scale(1.2);
+        }
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 100;
+        }
     }
 </style>

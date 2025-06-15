@@ -21,11 +21,11 @@
 
 <style>
     .content{
+        height: 100vh;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(8, 1fr);
         overflow-x: hidden;
-        height: 100vh;
     }
 </style>

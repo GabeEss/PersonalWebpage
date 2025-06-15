@@ -1,12 +1,18 @@
 <script lang="ts">
     export let selectedSection: string;
+
+    // remove default behavior to prevent scrolling to href target
+    function handleClick(event: MouseEvent, section: string) {
+        event.preventDefault();
+        selectedSection = section;
+    }
 </script>
 
 <nav>
     <ul>
-        <li><a href="#about" on:click={() => selectedSection = 'about'} id={selectedSection === 'about' ? 'selected' : undefined}>About</a></li>
-        <li><a href="#skills" on:click={() => selectedSection = 'skills'} id={selectedSection === 'skills' ? 'selected' : undefined}>Skills</a></li>
-        <li><a href="#projects" on:click={() => selectedSection = 'projects'} id={selectedSection === 'projects' ? 'selected' : undefined}>Projects</a></li>
+        <li><a href="#about" on:click={(event) => handleClick(event, 'about')} id={selectedSection === 'about' ? 'selected' : undefined}>About</a></li>
+        <li><a href="#skills" on:click={(event) => handleClick(event, 'skills')} id={selectedSection === 'skills' ? 'selected' : undefined}>Skills</a></li>
+        <li><a href="#projects" on:click={(event) => handleClick(event, 'projects')} id={selectedSection === 'projects' ? 'selected' : undefined}>Projects</a></li>
     </ul>
 </nav>
 
@@ -61,10 +67,11 @@
                 black,
                 rgb(245 245 220 / 80%),
                 rgb(245 245 220 / 80%),
-                black
+                black,
+                black,
             );
             background-size: 200% 100%;
-            animation: border-move 6s linear infinite;
+            animation: border-move 3s linear infinite;
             pointer-events: none;
             z-index: -1;
         }
@@ -95,8 +102,11 @@
         0% {
             background-position: 0% 0%;
         }
+        50% {
+            background-position: -60% 0%;
+        }
         100% {
-            background-position: 200% 0%;
+            background-position: 0% 0%;
         }
     }
 </style>
