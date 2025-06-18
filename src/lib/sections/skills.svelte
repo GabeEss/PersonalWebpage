@@ -58,6 +58,14 @@
         grid-column: 2/6;
     }
 
+    h2 {
+        letter-spacing: var(--letter-spacing-l);
+        text-decoration: none;
+        font-family: 'FriendlySansFont';
+        font-size: var(--font-size-h2);
+        color: var(--color-primary);
+    }
+
     .skills-list {
         grid-row: 3/6;
         grid-column: 1/6;

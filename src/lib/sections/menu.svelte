@@ -98,6 +98,7 @@
         }
     }
 
+
     @keyframes border-move {
         0% {
             background-position: 0% 0%;

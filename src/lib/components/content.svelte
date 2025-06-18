@@ -1,7 +1,7 @@
 <script lang="ts">
     import Menu from '../sections/menu.svelte';
     import About from '../sections/about.svelte';
-    import Projects from '../sections/projects.svelte';
+    import Projects from '../sections/projects/projects.svelte';
     import Skills from '../sections/skills.svelte';
     let selectedSection = 'about';
 </script>
