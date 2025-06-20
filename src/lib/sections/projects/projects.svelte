@@ -97,7 +97,11 @@
             border-radius: var(--border-radius-s);
             border: none;
             font-size: var(--font-size-h3);
+            cursor: pointer;
             &:hover{
+                // background-color: var(--color-primary);
+                // color: var(--color-secondary);
+                // opacity: 40%;
                 font-size: var(--font-size-h2);
             }
     }
