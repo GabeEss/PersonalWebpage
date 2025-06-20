@@ -52,12 +52,25 @@
 <style lang="scss">
     @use '../../../sass/main.scss';
 
+    .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: column;
+            letter-spacing: var(--letter-spacing-l);
+            background-color: var(--color-bg-light);
+            padding: var(--spacing-l);
+            border: none;
+            gap: var(--spacing-m);
+        }
+
     ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         list-style: none;
-        // margin: var(--spacing-m) 0;
+        margin: var(--spacing-m) 0;
 
 		li {
 			margin-right: var(--spacing-m);
@@ -71,18 +84,26 @@
         .description {
             
         }
-        .container {
-            all: unset;
-            display: flex;
-            align-items: stretch;
-            flex-direction: column;
-            letter-spacing: var(--letter-spacing-l);
-            background-color: var(--color-bg-light);
-            padding: var(--spacing-l);
-            border-radius: var(--border-radius-s);
-            transition:
-                background-color 0.2s ease-in-out,
-                transform 0.2s ease-in-out;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    a {
+        border-bottom: 2px solid transparent;
+        padding: 2px;
+        &:hover{
+            border-bottom: 2px solid black;
         }
     }
+    svg {
+        transition: width 0.2s, height 0.2s;
+        &:hover{
+            width: 26px;
+            height: 26px;
+        }
+    }
+
 </style>

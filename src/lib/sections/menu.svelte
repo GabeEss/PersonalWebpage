@@ -71,7 +71,7 @@
                 black,
             );
             background-size: 200% 100%;
-            animation: border-move 3s linear infinite;
+            animation: border-move 2s linear infinite;
             pointer-events: none;
             z-index: -1;
         }
@@ -104,7 +104,7 @@
             background-position: 0% 0%;
         }
         50% {
-            background-position: -60% 0%;
+            background-position: -20% 0%;
         }
         100% {
             background-position: 0% 0%;

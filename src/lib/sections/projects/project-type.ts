@@ -11,7 +11,7 @@ export default [
     {
         id: "1",
         title: "Example",
-        description: "This description is some kind of filler for now.",
+        description: "This description is some kind of filler for now. Endless words endless words endless words Endless words endless words endless words",
         tags: ['Typescript, JavaScript, React, Node.js'],
         icon: 'link',
         link: "https://github.com/"
