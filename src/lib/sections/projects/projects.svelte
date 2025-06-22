@@ -25,9 +25,15 @@
     <h2>Check Out My Projects</h2>
     <div class="carousel">
         <button class="prev" on:click={previousProject}>&lt;</button>
-        <div class="carousel-item">
+        <div class="carousel-track">
             {#key currentIndex}
+            <!-- {#each Projects as project, i} -->
             <div class:carouselPress={animate}>
+             <!-- <div class="carousel-slide
+                {i === currentIndex ? 'active' : ''}
+                {i === (currentIndex - 1 + Projects.length) % Projects.length ? 'left' : ''}
+                {i === (currentIndex + 1) % Projects.length ? 'right' : ''}"
+            > -->
             <ProjectContainer
                 title={Projects[currentIndex].title}
                 description={Projects[currentIndex].description}
@@ -35,7 +41,9 @@
                 icon={Projects[currentIndex].icon}
                 link={Projects[currentIndex].link}
             />
+            <!-- </div> -->
             </div>
+            <!-- {/each} -->
             {/key}
         </div>
         <button class="next" on:click={nextProject}>&gt;</button>
@@ -72,9 +80,47 @@
         grid-column: 1/6;
         display: flex;
         flex-direction: row;
+        width: 100%;
+        overflow: hidden;
         justify-content: center;
         align-items: center;
-        height: 150px;
+        height: 300px;
+    }
+    
+    .carousel-track {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60vw;
+        position: relative;
+        transition: transform 0.5s;
+    }
+
+    .carousel-slide {
+        flex: 0 0 30vw;
+        margin: 0 1vw;
+        opacity: 0.3;
+        transform: scale(0.8);
+        transition: 
+            opacity 0.4s, 
+            transform 0.4s;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .carousel-slide.active {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+    z-index: 2;
+    }
+
+    .carousel-slide.left,
+    .carousel-slide.right {
+    opacity: 0.6;
+    transform: scale(0.9);
+    pointer-events: auto;
+    z-index: 1;
     }
 
     .carousel-item, .carousel button {
@@ -82,7 +128,7 @@
     }
 
     .carousel-item {
-
+        
     }
 
     .carousel button {

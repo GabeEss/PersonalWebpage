@@ -53,15 +53,17 @@
     @use '../../../sass/main.scss';
 
     .container {
-            height: 100%;
+            // height: 100%;
+            height: 250px;
+            width: 400px;
             display: flex;
             justify-content: center;
             align-items: stretch;
             flex-direction: column;
             letter-spacing: var(--letter-spacing-l);
-            background-color: var(--color-bg-light);
             padding: var(--spacing-l);
-            border: none;
+            background: linear-gradient(120deg, var(--color-bg-dark) 42%, black 42%, black 42.2%, var(--color-bg-light) 0%);
+            border: black solid 2px;
             gap: var(--spacing-m);
         }
 
