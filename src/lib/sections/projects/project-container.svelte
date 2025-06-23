@@ -53,6 +53,7 @@
     @use '../../../sass/main.scss';
 
     .container {
+            position: relative;
             // height: 100%;
             height: 250px;
             width: 400px;
@@ -62,10 +63,22 @@
             flex-direction: column;
             letter-spacing: var(--letter-spacing-l);
             padding: var(--spacing-l);
-            background: linear-gradient(120deg, var(--color-bg-dark) 42%, black 42%, black 42.2%, var(--color-bg-light) 0%);
+            // background: linear-gradient(175deg, var(--color-bg-dark) 30%, black 30%, black 30.4%, var(--color-bg-light) 0%);
+            background: var(--color-bg-dark);
             border: black solid 2px;
             gap: var(--spacing-m);
         }
+
+    h3 {
+        background: var(--color-bg-light);
+        height: 30%;
+        width: 100%;
+    }
+
+    .description {
+
+    }
+
 
     ul {
         display: flex;
@@ -89,8 +102,9 @@
     }
 
     .icon {
-        display: flex;
-        justify-content: flex-end;
+        position: absolute;
+        top: 82.5%;
+        left: 90%;
     }
 
     a {
