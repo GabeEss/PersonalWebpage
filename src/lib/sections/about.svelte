@@ -21,6 +21,7 @@
     .about-header {
         grid-row: 1/1;
         grid-column: 2/6;
+        transform: rotate(5deg);
     }
 
     .about-greeting1 {
@@ -29,6 +30,7 @@
         height: 50%;
         display: flex;
         align-items: flex-end;
+        transform: rotate(8deg);
     }
 
     h1 {
@@ -63,6 +65,7 @@
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-b1);
+        transform: rotate(5deg);
     }
 
     .about-greeting3 {
@@ -75,6 +78,7 @@
         font-size: var(--font-size-b1);
         color: var(--color-bg-dark);
         animation: fade 1s ease-in;
+        transform: rotate(5deg);
     }
 
     @keyframes fade {
@@ -83,6 +87,15 @@
         }
         100% {
             opacity: 100;
+        }
+    }
+
+    @keyframes name-rotate {
+        0% {
+            transform: rotate(5deg);
+        }
+        100% {
+            transform: rotate(-5deg);
         }
     }
 </style>

@@ -56,13 +56,12 @@
             position: relative;
             // height: 100%;
             height: 250px;
-            width: 400px;
             display: flex;
             justify-content: center;
             align-items: stretch;
             flex-direction: column;
             letter-spacing: var(--letter-spacing-l);
-            padding: var(--spacing-l);
+            // padding: var(--spacing-l);
             // background: linear-gradient(175deg, var(--color-bg-dark) 30%, black 30%, black 30.4%, var(--color-bg-light) 0%);
             background: var(--color-bg-dark);
             border: black solid 2px;
@@ -95,10 +94,6 @@
 				margin-right: 0;
 			}
 		}
-
-        .description {
-            
-        }
     }
 
     .icon {

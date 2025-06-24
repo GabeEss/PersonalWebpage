@@ -37,7 +37,7 @@
         transition: all 0.2s ease-in-out;
         content: none;
         display: inline-block;
-        transform: rotate(-2deg);
+        transform: rotate(-5deg);
         transition: .4s ease-out;
         padding: 5px;
         border-bottom: black 2px solid;
@@ -59,24 +59,19 @@
             content: '';
             position: absolute;
             width: 100%;
-            left: 0; 
+            left: 0;
             bottom: 0;
             height: 2px;
-            background: linear-gradient(
-                90deg,
-                black,
-                rgb(245 245 220 / 80%),
-                rgb(245 245 220 / 80%),
-                black,
-                black,
-            );
-            background-size: 200% 100%;
-            animation: border-move 2s linear infinite;
+            background: white;
+            // background: linear-gradient(172deg, var(--color-bg-dark) 50%, var(--color-bg-light) 0%);
+            // background: linear-gradient(120deg, var(--color-bg-dark) 42%, black 42%, black 42.2%, var(--color-bg-light) 0%);
+            // background-size: 200% 100%;
+            // animation: border-move 4s linear infinite;
             pointer-events: none;
             z-index: -1;
         }
          &:hover {
-                animation: rotate 1.5s infinite ease-in-out;;
+                animation: rotate 1.5s infinite ease-in-out;
 				color: var(--color-secondary);
                 font-weight: 300;
                 background: black;
@@ -86,6 +81,8 @@
             animation: none;
             height: 0;
             width: 0;
+            color: none;
+            background: none;
         }   
     }
 
@@ -98,13 +95,13 @@
         }
     }
 
-
+    // Loading effect
     @keyframes border-move {
         0% {
             background-position: 0% 0%;
         }
         50% {
-            background-position: -20% 0%;
+            background-position: 85% 0%;
         }
         100% {
             background-position: 0% 0%;

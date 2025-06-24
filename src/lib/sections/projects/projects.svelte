@@ -22,7 +22,7 @@
 </script>
 
 <section id="projects">
-    <h2>Check Out My Projects</h2>
+    <h1>Check Out My Work</h1>
     <div class="carousel">
         <button class="prev" on:click={previousProject}>&lt;</button>
         <div class="carousel-track">
@@ -58,30 +58,37 @@
 
     #projects {
         animation: fade .5s ease-in;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-row: 2/9;
-        grid-column: 5/9;
+        grid-row: 2/8;
+        grid-column: 6/8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // width: 500px; // THIS WILL PUSH THE MENU
     }
 
-    h2 {
-        grid-row: 2/2;
-        grid-column: 2/6;
+    h1 {
+        width: 100%;
         letter-spacing: var(--letter-spacing-l);
         text-decoration: none;
         font-family: 'FriendlySansFont';
-        font-size: var(--font-size-h2);
+        font-size: var(--font-size-h1);
         color: var(--color-primary);
+        transform: rotate(5deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
     }
 
     .carousel {
+        transform: rotate(5deg);
         grid-row: 3/3;
         grid-column: 1/6;
         display: flex;
         flex-direction: row;
         width: 100%;
-        overflow: hidden;
+        // overflow: hidden;
         justify-content: center;
         align-items: center;
         height: 300px;
@@ -150,6 +157,7 @@
                 // opacity: 40%;
                 font-size: var(--font-size-h2);
             }
+            flex-shrink: 0;
     }
 
     .prev {

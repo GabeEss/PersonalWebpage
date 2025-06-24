@@ -21,7 +21,7 @@
 </script>
 
 <section id="skills">
-    <h2 class="skills-header">Things I've Learned</h2>
+    <h1 class="skills-header">Things I've Learned</h1>
     <nav class="skills-list">
         <ul>
             <li class={loaded ? 'animate one' : ''}>
@@ -46,27 +46,32 @@
     @use '../../sass/main.scss';
     #skills {
         animation: fade .5s ease-in;
-        grid-row: 2/9;
+        grid-row: 1/8;
         grid-column: 5/9;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .skills-header {
-        grid-row: 2/6;
-        grid-column: 2/6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: var(--spacing-xl);
     }
 
-    h2 {
+    h1 {
         letter-spacing: var(--letter-spacing-l);
         text-decoration: none;
         font-family: 'FriendlySansFont';
-        font-size: var(--font-size-h2);
+        font-size: var(--font-size-h1);
         color: var(--color-primary);
+        transform: rotate(5deg);
     }
 
     .skills-list {
+        transform: rotate(5deg);
         grid-row: 3/6;
         grid-column: 1/6;
     }
