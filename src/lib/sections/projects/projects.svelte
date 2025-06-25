@@ -58,40 +58,32 @@
 
     #projects {
         animation: fade .5s ease-in;
-        grid-row: 2/8;
-        grid-column: 6/8;
+        grid-row: 1/8;
+        grid-column: 5/8;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // width: 500px; // THIS WILL PUSH THE MENU
+        transform: rotate(5deg);
     }
 
     h1 {
-        width: 100%;
+        // width: 100%;
         letter-spacing: var(--letter-spacing-l);
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-h1);
         color: var(--color-primary);
-        transform: rotate(5deg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
+        padding-bottom: var(--spacing-l);
     }
 
     .carousel {
-        transform: rotate(5deg);
-        grid-row: 3/3;
-        grid-column: 1/6;
         display: flex;
         flex-direction: row;
         width: 100%;
         // overflow: hidden;
         justify-content: center;
         align-items: center;
-        height: 300px;
     }
     
     .carousel-track {

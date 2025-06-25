@@ -54,8 +54,8 @@
 
     .container {
             position: relative;
-            // height: 100%;
             height: 250px;
+            width: 400px;
             display: flex;
             justify-content: center;
             align-items: stretch;

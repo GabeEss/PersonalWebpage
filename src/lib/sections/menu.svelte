@@ -61,12 +61,11 @@
             width: 100%;
             left: 0;
             bottom: 0;
-            height: 2px;
-            background: white;
-            // background: linear-gradient(172deg, var(--color-bg-dark) 50%, var(--color-bg-light) 0%);
-            // background: linear-gradient(120deg, var(--color-bg-dark) 42%, black 42%, black 42.2%, var(--color-bg-light) 0%);
-            // background-size: 200% 100%;
-            // animation: border-move 4s linear infinite;
+            height: 64%;
+            // background: white;
+            background: linear-gradient(120deg, var(--color-bg-dark) 10%, var(--color-bg-light) 0%);
+            background-size: 200% 100%;
+            animation: border-move 1.5s linear infinite;
             pointer-events: none;
             z-index: -1;
         }
@@ -101,7 +100,7 @@
             background-position: 0% 0%;
         }
         50% {
-            background-position: 85% 0%;
+            background-position: 2% 0%;
         }
         100% {
             background-position: 0% 0%;

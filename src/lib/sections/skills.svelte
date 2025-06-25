@@ -47,7 +47,7 @@
     #skills {
         animation: fade .5s ease-in;
         grid-row: 1/8;
-        grid-column: 5/9;
+        grid-column: 4/9;
         display: flex;
         flex-direction: column;
         justify-content: center;
