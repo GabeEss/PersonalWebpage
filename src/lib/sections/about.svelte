@@ -23,7 +23,7 @@
         grid-column: 2/6;
         transform: rotate(5deg);
         background: linear-gradient(175deg, var(--color-bg-dark) 30%, var(--color-bg-light) 0%);
-        border-top: 1px solid black;
+        border-top: 2px solid black;
     }
 
     .about-greeting1 {
@@ -81,8 +81,8 @@
         color: var(--color-bg-dark);
         animation: fade 1s ease-in;
         transform: rotate(5deg);
-        background: linear-gradient(170deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
-        border-bottom: 1px solid black;
+        background: linear-gradient(175deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
+        border-bottom: 2px solid black;
     }
 
     @keyframes fade {

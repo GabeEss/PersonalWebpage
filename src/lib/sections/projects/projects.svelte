@@ -65,6 +65,7 @@
         justify-content: center;
         align-items: center;
         transform: rotate(5deg);
+        // padding-left: var(--spacing-l);
     }
 
     h1 {
@@ -75,7 +76,7 @@
         color: var(--color-primary);
         // background: linear-gradient(120deg, var(--color-bg-dark) 30%, var(--color-bg-light) 0%);
         // border-bottom: 2px solid black;
-        background-size: 200% 100%;
+        // background-size: 200% 100%;
         // animation: border-move 5s linear infinite;
     }
 

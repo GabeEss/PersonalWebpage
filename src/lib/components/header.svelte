@@ -32,7 +32,6 @@
   @use '../../sass/main';
 
   header{
-    // background-color: var(--color-bg-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;

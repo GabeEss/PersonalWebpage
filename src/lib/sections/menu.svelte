@@ -101,7 +101,7 @@
             background-position: 0% 0%;
         }
         50% {
-            background-position: 2% 0%;
+            background-position: 3% 0%;
         }
         100% {
             background-position: 0% 0%;

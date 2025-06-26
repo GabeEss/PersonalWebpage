@@ -61,17 +61,29 @@
     }
 
     h1 {
+        position: relative;
+        padding-top: var(--letter-spacing-xl);
+        padding-left: var(--letter-spacing-xl);
         letter-spacing: var(--letter-spacing-xl);
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-h1);
         color: var(--color-primary);
         transform: rotate(5deg);
-        background: linear-gradient(120deg, var(--color-bg-dark) 50%, var(--color-bg-light) 0%);
-        background-size: 200% 100%;
-        animation: border-move 1.9s linear;
-        border-bottom: 1px solid black;
-        border-left: 1px solid black;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            height: 64%;
+            background: linear-gradient(120deg, var(--color-bg-dark) 45%, var(--color-bg-light) 0%);
+            background-size: 200% 100%;
+            animation: border-move 1.9s linear;
+            pointer-events: none;
+            z-index: -1;
+            border: 5px solid black;
+        }
     }
 
     .skills-list {
