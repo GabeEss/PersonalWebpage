@@ -22,6 +22,8 @@
         grid-row: 1/1;
         grid-column: 2/6;
         transform: rotate(5deg);
+        background: linear-gradient(175deg, var(--color-bg-dark) 30%, var(--color-bg-light) 0%);
+        border-top: 1px solid black;
     }
 
     .about-greeting1 {
@@ -30,11 +32,11 @@
         height: 50%;
         display: flex;
         align-items: flex-end;
-        transform: rotate(8deg);
+        transform: rotate(5deg);
     }
 
     h1 {
-        letter-spacing: var(--letter-spacing-l);
+        letter-spacing: var(--letter-spacing-xl);
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-h1);
@@ -79,6 +81,8 @@
         color: var(--color-bg-dark);
         animation: fade 1s ease-in;
         transform: rotate(5deg);
+        background: linear-gradient(170deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
+        border-bottom: 1px solid black;
     }
 
     @keyframes fade {
@@ -87,15 +91,6 @@
         }
         100% {
             opacity: 100;
-        }
-    }
-
-    @keyframes name-rotate {
-        0% {
-            transform: rotate(5deg);
-        }
-        100% {
-            transform: rotate(-5deg);
         }
     }
 </style>

@@ -52,7 +52,7 @@
 
     #selected {
         z-index: 1;
-        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;
         position: relative;
         // BORDER BOTTOM EFFECT
         &::after {
@@ -64,6 +64,7 @@
             height: 64%;
             // background: white;
             background: linear-gradient(120deg, var(--color-bg-dark) 10%, var(--color-bg-light) 0%);
+            border-right: 2px solid black;
             background-size: 200% 100%;
             animation: border-move 1.5s linear infinite;
             pointer-events: none;

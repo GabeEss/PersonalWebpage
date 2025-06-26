@@ -68,16 +68,19 @@
     }
 
     h1 {
-        // width: 100%;
-        letter-spacing: var(--letter-spacing-l);
+        letter-spacing: var(--letter-spacing-xl);
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-h1);
         color: var(--color-primary);
-        padding-bottom: var(--spacing-l);
+        // background: linear-gradient(120deg, var(--color-bg-dark) 30%, var(--color-bg-light) 0%);
+        // border-bottom: 2px solid black;
+        background-size: 200% 100%;
+        // animation: border-move 5s linear infinite;
     }
 
     .carousel {
+        padding-top: var(--spacing-l);
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -190,6 +193,19 @@
         }
         100% {
             transform: translateX(0);
+        }
+    }
+
+    // Loading effect
+    @keyframes border-move {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 5% 0%;
+        }
+        100% {
+            background-position: 0% 0%;
         }
     }
 </style>
