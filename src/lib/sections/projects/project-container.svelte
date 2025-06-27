@@ -61,13 +61,11 @@
             align-items: stretch;
             flex-direction: column;
             letter-spacing: var(--letter-spacing-l);
-            // padding: var(--spacing-l);
-            // background: linear-gradient(175deg, var(--color-bg-dark) 30%, black 30%, black 30.4%, var(--color-bg-light) 0%);
             background: var(--color-bg-dark);
             border: black solid 2px;
-            border-radius: var(--border-radius-circle) 0px var(--border-radius-circle) 0px;
+            border-radius: 0px 0px 0px 0px;
             gap: var(--spacing-m);
-            // box-shadow: 0 4px 16px rgba(0,0,0,.5);
+            box-shadow: 0 4px 16px rgba(0,0,0,.5);
         }
 
     h3 {
@@ -103,7 +101,7 @@
         font-size: var(--font-size-b3);
         letter-spacing: var(--letter-spacing-s);
         color: var(--color-bg-light);
-
+        width: 60%;
 		li {
 			margin-right: var(--spacing-m);
 			color: color-mix(in srgb, var(--color-text-on-bg-light) 40%, transparent);
@@ -134,5 +132,16 @@
             height: 26px;
         }
     }
+
+    @media screen and (max-width: 1280px) {
+		.container {
+            height: 200px;
+            width: 400px;
+        }
+
+        .description {
+            font-size: var(--font-size-b3);
+        }
+	}
 
 </style>

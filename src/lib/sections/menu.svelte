@@ -107,4 +107,10 @@
             background-position: 0% 0%;
         }
     }
+
+    @media screen and (max-width: 1280px) {
+		nav {
+            grid-column: 1/9;
+        }
+	}
 </style>

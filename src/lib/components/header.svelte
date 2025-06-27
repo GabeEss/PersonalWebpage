@@ -117,4 +117,13 @@
     }
   }
 
+  @media screen and (max-width: 1080px) {
+		header {
+      justify-content: center;
+    }
+    .logo-container {
+      display: none;
+    }
+	}
+
 </style>

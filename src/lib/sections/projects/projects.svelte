@@ -27,13 +27,7 @@
         <button class="prev" on:click={previousProject}>&lt;</button>
         <div class="carousel-track">
             {#key currentIndex}
-            <!-- {#each Projects as project, i} -->
             <div class:carouselPress={animate}>
-             <!-- <div class="carousel-slide
-                {i === currentIndex ? 'active' : ''}
-                {i === (currentIndex - 1 + Projects.length) % Projects.length ? 'left' : ''}
-                {i === (currentIndex + 1) % Projects.length ? 'right' : ''}"
-            > -->
             <ProjectContainer
                 title={Projects[currentIndex].title}
                 description={Projects[currentIndex].description}
@@ -41,9 +35,7 @@
                 icon={Projects[currentIndex].icon}
                 link={Projects[currentIndex].link}
             />
-            <!-- </div> -->
             </div>
-            <!-- {/each} -->
             {/key}
         </div>
         <button class="next" on:click={nextProject}>&gt;</button>
@@ -65,7 +57,6 @@
         justify-content: center;
         align-items: center;
         transform: rotate(5deg);
-        // padding-left: var(--spacing-l);
     }
 
     h1 {
@@ -74,10 +65,6 @@
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-h1);
         color: var(--color-primary);
-        // background: linear-gradient(120deg, var(--color-bg-dark) 30%, var(--color-bg-light) 0%);
-        // border-bottom: 2px solid black;
-        // background-size: 200% 100%;
-        // animation: border-move 5s linear infinite;
     }
 
     .carousel {
@@ -85,53 +72,12 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        // overflow: hidden;
         justify-content: center;
         align-items: center;
-    }
-    
-    .carousel-track {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60vw;
-        position: relative;
-        transition: transform 0.5s;
-    }
-
-    .carousel-slide {
-        flex: 0 0 30vw;
-        margin: 0 1vw;
-        opacity: 0.3;
-        transform: scale(0.8);
-        transition: 
-            opacity 0.4s, 
-            transform 0.4s;
-        pointer-events: none;
-        z-index: 1;
-    }
-
-    .carousel-slide.active {
-    opacity: 1;
-    transform: scale(1);
-    pointer-events: auto;
-    z-index: 2;
-    }
-
-    .carousel-slide.left,
-    .carousel-slide.right {
-    opacity: 0.6;
-    transform: scale(0.9);
-    pointer-events: auto;
-    z-index: 1;
     }
 
     .carousel-item, .carousel button {
         height: 100%;
-    }
-
-    .carousel-item {
-        
     }
 
     .carousel button {
@@ -148,9 +94,6 @@
             font-size: var(--font-size-h3);
             cursor: pointer;
             &:hover{
-                // background-color: var(--color-primary);
-                // color: var(--color-secondary);
-                // opacity: 40%;
                 font-size: var(--font-size-h2);
             }
             flex-shrink: 0;
@@ -197,16 +140,9 @@
         }
     }
 
-    // Loading effect
-    @keyframes border-move {
-        0% {
-            background-position: 0% 0%;
+    @media screen and (max-width: 1340px) {
+		h1 {
+            display: none;
         }
-        50% {
-            background-position: 5% 0%;
-        }
-        100% {
-            background-position: 0% 0%;
-        }
-    }
+	}
 </style>
