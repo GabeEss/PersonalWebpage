@@ -54,8 +54,8 @@
 
     .container {
             position: relative;
-            height: 250px;
-            width: 400px;
+            height: 300px;
+            width: 500px;
             display: flex;
             justify-content: center;
             align-items: stretch;
@@ -65,17 +65,30 @@
             // background: linear-gradient(175deg, var(--color-bg-dark) 30%, black 30%, black 30.4%, var(--color-bg-light) 0%);
             background: var(--color-bg-dark);
             border: black solid 2px;
+            border-radius: var(--border-radius-circle) 0px var(--border-radius-circle) 0px;
             gap: var(--spacing-m);
+            // box-shadow: 0 4px 16px rgba(0,0,0,.5);
         }
 
     h3 {
         background: var(--color-bg-light);
         height: 30%;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--font-size-h3);
+        letter-spacing: var(--letter-spacing-l);
     }
 
     .description {
-
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--font-size-b2);
+        letter-spacing: var(--letter-spacing-m);
     }
 
 
@@ -85,6 +98,11 @@
         flex-wrap: wrap;
         list-style: none;
         margin: var(--spacing-m) 0;
+        justify-content: center;
+        align-items: center;
+        font-size: var(--font-size-b3);
+        letter-spacing: var(--letter-spacing-s);
+        color: var(--color-bg-light);
 
 		li {
 			margin-right: var(--spacing-m);

@@ -20,7 +20,7 @@ export default [
         id: "2",
         title: "Example 2",
         description: "This description is some kind of filler for now.",
-        tags: ['Typescript, JavaScript, React, Node.js'],
+        tags: ['Typescript, JavaScript, React, Node.js, CSS, HTML, MongoDB, Svelte'],
         icon: 'github',
         link: "https://github.com/"
     },
