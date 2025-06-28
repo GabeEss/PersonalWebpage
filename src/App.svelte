@@ -23,6 +23,12 @@
 
   @media screen and (max-width: 1080px) {
 		main {
+      background: linear-gradient(100deg, var(--color-bg-dark) 42%, black 42%, black 42.2%, var(--color-bg-light) 0%);;
+    }
+	}
+
+  @media screen and (max-width: 940px) {
+		main {
       background: linear-gradient(0deg, var(--color-bg-dark) 90%, black 90.4%, black 90.6%, var(--color-bg-light) 0%);;
     }
 	}

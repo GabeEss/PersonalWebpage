@@ -19,6 +19,7 @@
     }
 
     .about-header {
+        // height: 100px;
         grid-row: 1/1;
         grid-column: 2/6;
         transform: rotate(5deg);
@@ -29,7 +30,7 @@
     .about-greeting1 {
         grid-row: 2/2;
         grid-column: 3/6;
-        height: 50%;
+        padding-bottom: var(--spacing-xl);
         display: flex;
         align-items: flex-end;
         transform: rotate(5deg);
@@ -40,6 +41,7 @@
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-h1);
+        padding-bottom: var(--spacing-xl);
     }
 
     .about-name {
@@ -62,7 +64,7 @@
     .about-greeting2 {
         grid-row: 3/3;
         grid-column: 1/6;
-
+        padding-bottom: var(--spacing-xl);
         letter-spacing: var(--letter-spacing-m);
         text-decoration: none;
         font-family: 'FriendlySansFont';
@@ -73,7 +75,8 @@
     .about-greeting3 {
         grid-row: 4/6;
         grid-column: 2/6;
-
+        height: 100px;
+        padding-bottom: var(--spacing-xl);
         letter-spacing: var(--letter-spacing-s);
         text-decoration: none;
         font-family: 'FriendlySansFont';
@@ -81,6 +84,7 @@
         color: var(--color-bg-dark);
         animation: fade 1s ease-in;
         transform: rotate(5deg);
+        position: relative;
         background: linear-gradient(175deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
         border-bottom: 2px solid black;
     }
@@ -93,4 +97,14 @@
             opacity: 100;
         }
     }
+
+    @media screen and (max-height: 400px) {
+		#about {
+            height: 600px;
+        }
+        h1 {
+            margin-top: 1em;
+            height: 100px;
+        }
+	}
 </style>

@@ -145,4 +145,14 @@
             display: none;
         }
 	}
+
+    @media screen and (max-height: 400px) {
+		#projects {
+            height: 600px;
+        }
+        h1 {
+            margin-top: 1em;
+            height: 100px;
+        }
+	}
 </style>

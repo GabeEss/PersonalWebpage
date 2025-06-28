@@ -117,7 +117,7 @@
     }
   }
 
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 940px) {
 		header {
       justify-content: center;
     }

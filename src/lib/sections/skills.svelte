@@ -176,4 +176,16 @@
             background-position: 0% 0%;
         }
     }
+
+    @media screen and (max-width: 1080px) {
+		h1 {
+            font-size: var(--font-size-h2);
+        }
+	}
+
+    @media screen and (max-height: 400px) {
+		#skills {
+            height: 500px;
+        }
+	}
 </style>
