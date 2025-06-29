@@ -29,7 +29,8 @@
 
   @media screen and (max-width: 940px) {
 		main {
-      background: linear-gradient(0deg, var(--color-bg-dark) 90%, black 90.4%, black 90.6%, var(--color-bg-light) 0%);;
+      // background: linear-gradient(0deg, var(--color-bg-dark) 90%, black 90.4%, black 90.6%, var(--color-bg-light) 0%);;
+      background: var(--color-bg-dark);
     }
 	}
 </style>

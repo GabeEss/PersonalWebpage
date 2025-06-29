@@ -185,7 +185,30 @@
 
     @media screen and (max-height: 400px) {
 		#skills {
-            height: 500px;
+            height: var(--content-height-small);
         }
 	}
+
+    @media screen and (max-width: 940px) {
+        #skills {
+            width: 100%;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            height: var(--content-height-small);
+            background: var(--color-bg-light);
+        }
+        .skills-header{
+            display: none;
+        }
+        .skills-list {
+            width: 80%;
+            transform: none;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        .skills-list {
+            width: var(--content-width-small);
+        }
+    }
 </style>

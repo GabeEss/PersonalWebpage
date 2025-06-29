@@ -144,4 +144,16 @@
         }
 	}
 
+    // @media screen and (max-width: 940px) {
+    //     .container {
+    //         width: var(--content-width-small);
+    //     }
+    // }
+
+    @media screen and (max-width: 640px) {
+        .container {
+            width: var(--content-width-small);
+        }
+    }
+
 </style>

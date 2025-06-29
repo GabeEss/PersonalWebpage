@@ -28,4 +28,21 @@
         grid-template-rows: repeat(8, 1fr);
         overflow-x: hidden;
     }
+
+    @media screen and (max-width: 940px) {
+		.content {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            &::after{
+                content: "";
+                background-color: var(--color-bg-dark);
+                height: 50px;
+                width: 100%;
+            }
+        }
+	}
 </style>

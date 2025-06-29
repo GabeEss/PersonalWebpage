@@ -155,4 +155,21 @@
             height: 100px;
         }
 	}
+
+    @media screen and (max-width: 940px) {
+        #projects {
+            transform: none;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            height: var(--content-height-small);
+            width: 100%;
+            background: var(--color-bg-light);
+        }
+    }
+
+    // @media screen and (max-width: 940px) and (max-height: 1000px) {
+    //     #projects {
+    //         height: var(--content-height-medium);
+    //     }
+    // }
 </style>

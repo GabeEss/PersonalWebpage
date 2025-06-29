@@ -107,4 +107,22 @@
             height: 100px;
         }
 	}
+
+    @media screen and (max-width: 940px) {
+        #about {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            height: var(--content-height-small);
+            width: 100%;
+            background: var(--color-bg-light);
+        }
+        .about-header {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 640px) {
+        
+    }
+    
 </style>

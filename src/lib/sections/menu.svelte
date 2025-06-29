@@ -62,7 +62,6 @@
             left: 0;
             bottom: 0;
             height: 64%;
-            // background: white;
             background: linear-gradient(120deg, var(--color-bg-dark) 10%, var(--color-bg-light) 0%);
             border-right: 2px solid black;
             background-size: 200% 100%;
@@ -81,7 +80,6 @@
             animation: none;
             height: 0;
             width: 0;
-            color: none;
             background: none;
         }   
     }
@@ -111,6 +109,69 @@
     @media screen and (max-width: 1280px) {
 		nav {
             grid-column: 1/9;
+        }
+	}
+
+    @media screen and (max-width: 940px) {
+		nav {
+            width: 100%;
+            height: 100px;
+            background: var(--color-bg-dark);
+            box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: var(--spacing-l) var(--spacing-page-inset)
+            // grid-column: unset;
+            // grid-row: unset;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 1rem
+        }
+        a {
+            font-size: var(--font-size-b1);
+            &:hover{
+                color: inherit;
+                animation: none;
+                // transform: none;
+                border-bottom: 2px solid black;
+                font-weight: inherit;
+                background: none;
+            }
+        }
+        #selected {
+            border-right: none;
+            &::after{
+                border-right: 2px solid black;
+            }
+            &:hover {
+                animation: none;
+                border-bottom: 2px solid black;
+                font-weight: inherit;
+                color: inherit;
+                background: inherit;
+            }
+            &:hover::after {
+            animation: border-move 1.5s linear infinite;
+            height: 64%;
+            width: 100%;
+            background: linear-gradient(120deg, var(--color-bg-dark) 10%, var(--color-bg-light) 0%);
+            background-size: 200% 100%;
+        } 
         }
 	}
 </style>

@@ -120,6 +120,8 @@
   @media screen and (max-width: 940px) {
 		header {
       justify-content: center;
+      background: var(--color-bg-light);
+      border-bottom: 2px solid black;
     }
     .logo-container {
       display: none;
