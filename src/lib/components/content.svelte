@@ -21,7 +21,8 @@
 
 <style>
     .content{
-        height: 100vh;
+        min-height: 100vh;
+        /* height: 100vh; */
         width: 100%;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -37,12 +38,13 @@
             flex-direction: column;
             /* justify-content: center; */
             align-items: center;
-            &::after{
+            padding-bottom: 5rem;
+            /* &::after{
                 content: "";
                 background-color: var(--color-bg-dark);
                 height: 50px;
                 width: 100%;
-            }
+            } */
         }
 	}
 </style>
