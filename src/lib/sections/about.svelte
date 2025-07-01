@@ -115,9 +115,27 @@
             height: var(--content-height-small);
             width: 100%;
             background: var(--color-bg-light);
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
         }
         .about-header {
             display: none;
+        }
+        .about-greeting1 {
+            transform: none;
+            width: 80%;
+        }
+        .about-greeting2 {
+            transform: none;
+            width: 80%;
+        }
+        .about-greeting3 {
+            transform: none;
+            background: none;
+            border: none;
+            width: 80%;
         }
     }
 
