@@ -22,7 +22,7 @@
         grid-row: 1/1;
         grid-column: 2/6;
         transform: rotate(5deg);
-        background: linear-gradient(175deg, var(--color-bg-dark) 30%, var(--color-bg-light) 0%);
+        background: linear-gradient(175deg, var(--color-bg-dark) 40%, var(--color-bg-light) 0%);
         border-top: 2px solid black;
     }
 
@@ -72,6 +72,7 @@
     }
 
     .about-greeting3 {
+        position: relative;
         grid-row: 4/6;
         grid-column: 2/6;
         height: 100px;
@@ -84,8 +85,21 @@
         animation: fade 1s ease-in;
         transform: rotate(5deg);
         position: relative;
-        background: linear-gradient(175deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
+        // background: linear-gradient(175deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
         border-bottom: 2px solid black;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            height: var(--font-size-h1);
+            background: linear-gradient(175deg, var(--color-bg-light) 32%, var(--color-bg-dark) 0%);
+            background-size: 200% 100%;
+            animation: border-move 1.5s linear infinite;
+            pointer-events: none;
+            z-index: -1;
+        }
     }
 
     @keyframes fade {

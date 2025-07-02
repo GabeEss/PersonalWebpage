@@ -74,13 +74,14 @@
 				color: var(--color-secondary);
                 font-weight: 300;
                 background: black;
-                border-bottom: 2px solid transparent;
+                border: none;
 			}
         &:hover::after {
             animation: none;
             height: 0;
             width: 0;
             background: none;
+            border: none;
         }   
     }
 
