@@ -61,11 +61,12 @@
             align-items: stretch;
             flex-direction: column;
             letter-spacing: var(--letter-spacing-l);
-            background: var(--color-bg-dark);
-            border: black solid 2px;
-            border-radius: 0px 0px 0px 0px;
+            background: var(--color-bg-light);
+            border: none;
+            // border: black solid 2px;
+            // border-radius: 0px 0px 0px 0px;
             gap: var(--spacing-m);
-            box-shadow: 0 4px 16px rgba(0,0,0,.5);
+            // box-shadow: 0 4px 16px rgba(0,0,0,.5);
         }
 
     h3 {
@@ -83,10 +84,13 @@
         height: 30%;
         width: 100%;
         display: flex;
+        align-items: flex-start;
         justify-content: center;
-        align-items: center;
+        text-align: left;
         font-size: var(--font-size-b2);
         letter-spacing: var(--letter-spacing-m);
+        padding-left: .5rem;
+        padding-right: .5rem;
     }
 
 

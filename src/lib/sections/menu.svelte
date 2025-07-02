@@ -37,7 +37,7 @@
         transition: all 0.2s ease-in-out;
         content: none;
         display: inline-block;
-        transform: rotate(-5deg);
+        transform: rotate(2deg);
         transition: .4s ease-out;
         padding: 5px;
         border-bottom: black 2px solid;
