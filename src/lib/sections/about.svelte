@@ -3,7 +3,7 @@
         <p class="about-hello">Hi, I'm <p class="about-name">Gabe S!</p>
     </div>
     <p class="about-greeting2"> I'm a self-taught software developer based in Toronto, Canada.</p>
-    <p class="about-greeting3">I love building cool stuff with React. Take a look at some of the projects I've built or some of the skills I've picked up.</p>
+    <p class="about-greeting3">Take a look at some of the projects I've built or some of the skills I've picked up.</p>
 </section>
 
 <style lang="scss">
