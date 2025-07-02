@@ -26,17 +26,17 @@ export default [
     },
     {
         id: "3",
-        title: "Diagram Builder Demo",
-        description: "This application allows users to create and export installation schematics as PDFs. It supports CSV export for easy data manipulation.",
-        tags: ['React, Vite'],
+        title: "Get It",
+        description: "A forum style discussion website. Features user-generated posts, comments, and persistent data storage via Google's Firestore.",
+        tags: ['JavaScript, React, Firebase, CSS'],
         icon: 'link',
-        link: "https://gabeess.github.io/DiagramBuilderDemo/"
+        link: "https://gabeess.github.io/Get-It/"
     },
     {
         id: "3",
         title: "Diagram Builder Demo",
         description: "This application allows users to create and export installation schematics as PDFs. It supports CSV export for easy data manipulation.",
-        tags: ['React, Vite'],
+        tags: ['React, Vite, CSS'],
         icon: 'link',
         link: "https://gabeess.github.io/DiagramBuilderDemo/"
     },
