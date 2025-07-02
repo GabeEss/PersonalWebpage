@@ -123,8 +123,6 @@
             justify-content: center;
             align-items: center;
             padding: var(--spacing-l) var(--spacing-page-inset)
-            // grid-column: unset;
-            // grid-row: unset;
         }
         ul {
             display: flex;
@@ -147,7 +145,6 @@
             &:hover{
                 color: inherit;
                 animation: none;
-                // transform: none;
                 border-bottom: 2px solid black;
                 font-weight: inherit;
                 background: none;

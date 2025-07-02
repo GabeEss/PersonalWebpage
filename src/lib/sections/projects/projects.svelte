@@ -9,9 +9,7 @@
     onMount(() => {
         animate = true;
     });
-
-    // if currentIndex + 1 is smaller than Projects.length, the result of % is currentIndex + 1
-    // if currentIndex + 1 is the same as Projects.length, the result is 0
+    
     function nextProject() {
         currentIndex = (currentIndex + 1) % Projects.length;
     }
@@ -166,10 +164,4 @@
             background: var(--color-bg-light);
         }
     }
-
-    // @media screen and (max-width: 940px) and (max-height: 1000px) {
-    //     #projects {
-    //         height: var(--content-height-medium);
-    //     }
-    // }
 </style>

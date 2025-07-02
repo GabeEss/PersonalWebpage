@@ -19,7 +19,6 @@
     }
 
     .about-header {
-        // height: 100px;
         grid-row: 1/1;
         grid-column: 2/6;
         transform: rotate(5deg);
@@ -137,10 +136,6 @@
             border: none;
             width: 80%;
         }
-    }
-
-    @media screen and (max-width: 640px) {
-        
     }
     
 </style>
