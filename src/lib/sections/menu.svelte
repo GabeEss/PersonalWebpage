@@ -32,7 +32,7 @@
         letter-spacing: var(--letter-spacing-l);
         text-decoration: none;
         font-family: 'FriendlySansFont';
-        font-size: var(--font-size-h1);
+        font-size: var(--font-size-h2);
         color: var(--color-primary);
         transition: all 0.2s ease-in-out;
         content: none;
