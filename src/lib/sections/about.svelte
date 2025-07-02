@@ -81,7 +81,7 @@
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-b1);
         // color: var(--color-bg-dark);
-        animation: fade 1s ease-in;
+        // animation: fade 1s ease-in;
         transform: rotate(0deg);
         position: relative;
         // background: linear-gradient(175deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);

@@ -41,18 +41,18 @@
         transition: .4s ease-out;
         padding: 5px;
         border-bottom: black 2px solid;
-        &:hover {
-                animation: rotate 1.5s infinite ease-in-out;;
-				color: var(--color-secondary);
-                font-weight: 300;
-                background: black;
-                border-bottom: 2px solid transparent;
-			}   
+        // &:hover {
+        //         animation: rotate 1.5s infinite ease-in-out;;
+		// 		color: var(--color-secondary);
+        //         font-weight: 300;
+        //         background: black;
+        //         border-bottom: 2px solid transparent;
+		// 	}   
     }
 
     #selected {
         z-index: 1;
-        border-right: 2px solid transparent;
+        border-right: none;
         position: relative;
         // BORDER BOTTOM EFFECT
         &::after {
@@ -69,20 +69,20 @@
             pointer-events: none;
             z-index: -1;
         }
-         &:hover {
-                animation: rotate 1.5s infinite ease-in-out;
-				color: var(--color-secondary);
-                font-weight: 300;
-                background: black;
-                border: none;
-			}
-        &:hover::after {
-            animation: none;
-            height: 0;
-            width: 0;
-            background: none;
-            border: none;
-        }   
+        //  &:hover {
+        //         animation: rotate 1.5s infinite ease-in-out;
+		// 		color: var(--color-secondary);
+        //         font-weight: 300;
+        //         background: black;
+        //         border: none;
+		// 	}
+        // &:hover::after {
+        //     animation: none;
+        //     height: 0;
+        //     width: 0;
+        //     background: none;
+        //     border: none;
+        // }   
     }
 
     @keyframes rotate {
