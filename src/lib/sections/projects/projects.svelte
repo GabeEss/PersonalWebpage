@@ -20,7 +20,6 @@
 </script>
 
 <section id="projects">
-    <h1>Check Out My Work</h1>
     <div class="carousel">
         <button class="prev" on:click={previousProject}>&lt;</button>
         <div class="carousel-track">

@@ -1,5 +1,4 @@
 <section id="about">
-    <h1 class="about-header">About Me</h1>
     <div class="about-greeting1">
         <p class="about-hello">Hello, I'm <p class="about-name">Gabe S!</p>
     </div>
@@ -68,7 +67,7 @@
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-b1);
-        transform: rotate(1deg);
+        transform: rotate(0deg);
     }
 
     .about-greeting3 {
@@ -81,25 +80,25 @@
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-b1);
-        color: var(--color-bg-dark);
+        // color: var(--color-bg-dark);
         animation: fade 1s ease-in;
         transform: rotate(0deg);
         position: relative;
         // background: linear-gradient(175deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
-        border-bottom: 2px solid black;
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            height: var(--font-size-h1);
-            background: linear-gradient(180deg, var(--color-bg-light) 32%, var(--color-bg-dark) 0%);
-            background-size: 200% 100%;
-            animation: border-move 1.5s linear infinite;
-            pointer-events: none;
-            z-index: -1;
-        }
+        // border-bottom: 2px solid black;
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     width: 100%;
+        //     left: 0;
+        //     bottom: 0;
+        //     height: var(--font-size-h1);
+        //     background: linear-gradient(180deg, var(--color-bg-light) 32%, var(--color-bg-dark) 0%);
+        //     background-size: 200% 100%;
+        //     animation: border-move 1.5s linear infinite;
+        //     pointer-events: none;
+        //     z-index: -1;
+        // }
     }
 
     @keyframes fade {

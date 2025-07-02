@@ -21,7 +21,6 @@
 </script>
 
 <section id="skills">
-    <h1 class="skills-header">Things I've Learned</h1>
     <nav class="skills-list">
         <ul>
             <li class={loaded ? 'animate one' : ''}>
