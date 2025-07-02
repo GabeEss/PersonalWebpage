@@ -10,7 +10,7 @@
   
 <header>
   <div class="logo-container">
-    <a target="_blank" rel="noopener noreferrer" href={currentUrl}><p>GS</p></a>
+    <p>GS</p>
   </div>
   <div class="socials">
     <a target="_blank" rel="noopener noreferrer" href="https://github.com/GabeEss">
@@ -39,11 +39,9 @@
     letter-spacing: var(--letter-spacing-l);
   }
 
-  .logo-container a {
+  .logo-container p {
+    // cursor: pointer;
     text-decoration: none;
-  }
-
-  .logo-container a p {
     font-family: 'FriendlySansFont';
     font-size: var(--icon-size-l);
     height: var(--icon-size-l);

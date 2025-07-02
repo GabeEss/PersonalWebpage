@@ -21,7 +21,6 @@
 
 <section id="projects">
     <div class="carousel">
-        <button class="prev" on:click={previousProject}>&lt;</button>
         <div class="carousel-track">
             {#key currentIndex}
             <div class:carouselPress={animate}>
@@ -35,7 +34,15 @@
             </div>
             {/key}
         </div>
-        <button class="next" on:click={nextProject}>&gt;</button>
+        <div class="carousel-dots">
+            {#each Projects as _, i}
+            <button
+                class:active-dot={i === currentIndex}
+                on:click={() => currentIndex = i}
+                aria-label={`Go to project ${i + 1}`}>
+            </button>
+            {/each}
+        </div>
     </div>
 </section>
 
@@ -67,42 +74,63 @@
     .carousel {
         padding-top: var(--spacing-l);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
     }
 
-    .carousel-item, .carousel button {
-        height: 100%;
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: .75rem;
+        margin-top: 1rem;
     }
 
-    .carousel button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            letter-spacing: var(--letter-spacing-l);
-            background-color: var(--color-secondary);
-            color: var(--color-primary);
-            padding: var(--spacing-l);
-            width: var(--spacing-m);
-            border-radius: var(--border-radius-s);
-            border: none;
-            font-size: var(--font-size-h3);
-            cursor: pointer;
-            &:hover{
-                font-size: var(--font-size-h2);
-            }
-            flex-shrink: 0;
+    .carousel-dots button {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: none;
+        background-color: var(--color-primary);
+        opacity: .5;
+        cursor: pointer;
+        transition: opacity .2s, background .2s;
+        padding: 0;
     }
 
-    .prev {
-        animation: pushLeft 2s ease-in-out infinite;
+    .carousel-dots button.active-dot {
+        background: var(--color-primary);
+        opacity: 1;
+        // box-shadow: 0 0 0 2px var(--color-secondary);
     }
 
-    .next {
-        animation: pushRight 2s ease-in-out infinite;
-    }
+    // .carousel button {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         letter-spacing: var(--letter-spacing-l);
+    //         background-color: var(--color-secondary);
+    //         color: var(--color-primary);
+    //         padding: var(--spacing-l);
+    //         width: var(--spacing-m);
+    //         border-radius: var(--border-radius-s);
+    //         border: none;
+    //         font-size: var(--font-size-h3);
+    //         cursor: pointer;
+    //         &:hover{
+    //             font-size: var(--font-size-h2);
+    //         }
+    //         flex-shrink: 0;
+    // }
+
+    // .prev {
+    //     animation: pushLeft 2s ease-in-out infinite;
+    // }
+
+    // .next {
+    //     animation: pushRight 2s ease-in-out infinite;
+    // }
 
     @keyframes fade {
         0% {
