@@ -10,26 +10,34 @@ export type ProjectItem = {
 export default [
     {
         id: "1",
-        title: "Example",
-        description: "This description is some kind of filler for now. Endless words endless words endless words Endless words endless words endless words",
-        tags: ['Typescript, JavaScript, React, Node.js'],
-        icon: 'link',
-        link: "https://github.com/"
+        title: "Personal Webpage",
+        description: "I built this webpage to showcase my projects and save you the trouble of sifting through my github repository.",
+        tags: ['Typescript, Svelte, SCSS'],
+        icon: 'github',
+        link: "https://github.com/GabeEss/PersonalWebpage"
     },
     {
         id: "2",
-        title: "Example 2",
-        description: "This description is some kind of filler for now.",
-        tags: ['Typescript, JavaScript, React, Node.js, CSS, HTML, MongoDB, Svelte'],
-        icon: 'github',
-        link: "https://github.com/"
+        title: "Name Book",
+        description: "A mock social media platform. Supports real-time posts, comments, and messaging with websockets. Supports making friends and events.",
+        tags: ['Mongo, Express, React, Node.js, Socket.io'],
+        icon: 'link',
+        link: "https://my-name-book.netlify.app/"
     },
     {
         id: "3",
-        title: "Example 3",
-        description: "This description is some kind of filler for now.",
-        tags: ['Typescript, JavaScript, React, Node.js'],
+        title: "Diagram Builder Demo",
+        description: "This application allows users to create and export installation schematics as PDFs. It supports CSV export for easy data manipulation.",
+        tags: ['React, Vite'],
         icon: 'link',
-        link: "https://github.com/"
+        link: "https://gabeess.github.io/DiagramBuilderDemo/"
+    },
+    {
+        id: "3",
+        title: "Diagram Builder Demo",
+        description: "This application allows users to create and export installation schematics as PDFs. It supports CSV export for easy data manipulation.",
+        tags: ['React, Vite'],
+        icon: 'link',
+        link: "https://gabeess.github.io/DiagramBuilderDemo/"
     },
 ] as ProjectItem[];

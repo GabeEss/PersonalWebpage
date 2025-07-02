@@ -93,9 +93,9 @@
         border-radius: 50%;
         border: none;
         background-color: var(--color-primary);
-        opacity: .5;
+        opacity: .2;
         cursor: pointer;
-        transition: opacity .2s, background .2s;
+        transition: background .2s;
         padding: 0;
     }
 

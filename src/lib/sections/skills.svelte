@@ -28,14 +28,15 @@
             <!-- <li><SvelteIcon/></li> -->
             <li class={loaded ? 'animate two' : ''}>
                 <a target="_blank" href="https://tc39.es/"><JavascriptIcon/></a></li>
-            <!-- <li><TypescriptIcon/></li> -->
             <li class={loaded ? 'animate three' : ''}>
-                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><HtmlIcon/></a></li>
+                <a target="_blank" href="https://www.typescriptlang.org/"><TypescriptIcon/></a></li>
             <li class={loaded ? 'animate four' : ''}>
-                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><CssIcon/></a></li>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML"><HtmlIcon/></a></li>
             <li class={loaded ? 'animate five' : ''}>
+                <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"><CssIcon/></a></li>
+            <li class={loaded ? 'animate six' : ''}>
                 <a target="_blank" href="https://nodejs.org/en"><NodejsIcon/></a></li>
-            <li class={loaded ? 'animate six' : ''} on:animationend={handleAnimationEnd}>
+            <li class={loaded ? 'animate seven' : ''} on:animationend={handleAnimationEnd}>
                 <a target="_blank" href="https://www.mongodb.com/"><MongodbIcon/></a></li>
         </ul>
     </nav>
@@ -128,6 +129,10 @@
 
     .six {
         animation-delay: 1.1s;
+    }
+
+    .seven {
+        animation-delay: 1.3s;
     }
 
     ul li:not(.animate) {

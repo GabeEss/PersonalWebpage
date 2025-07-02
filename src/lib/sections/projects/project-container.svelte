@@ -67,6 +67,7 @@
             // border-radius: 0px 0px 0px 0px;
             gap: var(--spacing-m);
             // box-shadow: 0 4px 16px rgba(0,0,0,.5);
+            font-family: 'FriendlySansFont';
         }
 
     h3 {
@@ -100,11 +101,11 @@
         flex-wrap: wrap;
         list-style: none;
         margin: var(--spacing-m) 0;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        text-align: left;
         font-size: var(--font-size-b3);
-        letter-spacing: var(--letter-spacing-s);
-        color: var(--color-bg-light);
+        letter-spacing: var(--letter-spacing-m);
+        color: var(--color-primary);
         width: 60%;
 		li {
 			margin-right: var(--spacing-m);
@@ -118,7 +119,7 @@
 
     .icon {
         position: absolute;
-        top: 82.5%;
+        top: 80%;
         left: 90%;
     }
 
@@ -151,6 +152,10 @@
     @media screen and (max-width: 640px) {
         .container {
             width: var(--content-width-small);
+        }
+
+        ul{
+            font-size: var(--font-size-small);
         }
     }
 

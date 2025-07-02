@@ -76,7 +76,7 @@
         grid-column: 2/6;
         height: 100px;
         padding-bottom: var(--spacing-xl);
-        letter-spacing: var(--letter-spacing-s);
+        letter-spacing: var(--letter-spacing-m);
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-b1);
