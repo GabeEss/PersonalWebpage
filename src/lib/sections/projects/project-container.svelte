@@ -79,6 +79,7 @@
         align-items: center;
         font-size: var(--font-size-h3);
         letter-spacing: var(--letter-spacing-l);
+        // color: var(--color-bg-dark);
     }
 
     .description {

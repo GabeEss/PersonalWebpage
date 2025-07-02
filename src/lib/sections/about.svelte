@@ -1,8 +1,8 @@
 <section id="about">
     <div class="about-greeting1">
-        <p class="about-hello">Hello, I'm <p class="about-name">Gabe S!</p>
+        <p class="about-hello">Hi, I'm <p class="about-name">Gabe S!</p>
     </div>
-    <p class="about-greeting2"> I am a self-taught software developer from Toronto, Canada.</p>
+    <p class="about-greeting2"> I'm a self-taught software developer based in Toronto, Canada.</p>
     <p class="about-greeting3">I love building cool stuff with React. Take a look at some of the projects I've built or some of the skills I've picked up.</p>
 </section>
 
@@ -10,9 +10,13 @@
     @use '../../sass/main.scss';
     #about{
         animation: fade .5s ease-in;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+        // display: grid;
+        // grid-template-columns: repeat(6, 1fr);
+        // grid-template-rows: repeat(6, 1fr);
         grid-row: 2/8;
         grid-column: 5/9;
     }
