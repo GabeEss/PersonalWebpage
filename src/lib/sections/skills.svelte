@@ -69,7 +69,7 @@
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-h1);
         color: var(--color-primary);
-        transform: rotate(5deg);
+        transform: rotate(0deg);
         &::after {
             content: '';
             position: absolute;
@@ -88,7 +88,7 @@
 
     .skills-list {
         padding-top: var(--spacing-xl);
-        transform: rotate(5deg);
+        transform: rotate(0deg);
         grid-row: 3/6;
         grid-column: 1/6;
     }

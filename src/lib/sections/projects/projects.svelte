@@ -9,7 +9,7 @@
     onMount(() => {
         animate = true;
     });
-    
+
     function nextProject() {
         currentIndex = (currentIndex + 1) % Projects.length;
     }
@@ -54,7 +54,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: rotate(5deg);
+        transform: rotate(0deg);
     }
 
     h1 {

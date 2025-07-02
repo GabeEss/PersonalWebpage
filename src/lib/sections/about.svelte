@@ -21,8 +21,8 @@
     .about-header {
         grid-row: 1/1;
         grid-column: 2/6;
-        transform: rotate(5deg);
-        background: linear-gradient(175deg, var(--color-bg-dark) 40%, var(--color-bg-light) 0%);
+        transform: rotate(0deg);
+        background: linear-gradient(180deg, var(--color-bg-dark) 40%, var(--color-bg-light) 0%);
         border-top: 2px solid black;
     }
 
@@ -32,7 +32,7 @@
         padding-bottom: var(--spacing-xl);
         display: flex;
         align-items: flex-end;
-        transform: rotate(5deg);
+        transform: rotate(1deg);
     }
 
     h1 {
@@ -68,7 +68,7 @@
         text-decoration: none;
         font-family: 'FriendlySansFont';
         font-size: var(--font-size-b1);
-        transform: rotate(5deg);
+        transform: rotate(1deg);
     }
 
     .about-greeting3 {
@@ -83,7 +83,7 @@
         font-size: var(--font-size-b1);
         color: var(--color-bg-dark);
         animation: fade 1s ease-in;
-        transform: rotate(5deg);
+        transform: rotate(0deg);
         position: relative;
         // background: linear-gradient(175deg, var(--color-bg-light) 70%, var(--color-bg-dark) 0%);
         border-bottom: 2px solid black;
@@ -94,7 +94,7 @@
             left: 0;
             bottom: 0;
             height: var(--font-size-h1);
-            background: linear-gradient(175deg, var(--color-bg-light) 32%, var(--color-bg-dark) 0%);
+            background: linear-gradient(180deg, var(--color-bg-light) 32%, var(--color-bg-dark) 0%);
             background-size: 200% 100%;
             animation: border-move 1.5s linear infinite;
             pointer-events: none;
