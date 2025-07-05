@@ -19,18 +19,10 @@ export default [
     {
         id: "2",
         title: "Name Book",
-        description: "A mock social media platform. Supports real-time posts, comments, and messaging with websockets. Supports making friends and events.",
+        description: "A mock social media platform. Supports real-time posts, comments, and messaging with websockets. Make some friends and post an event!",
         tags: ['Mongo, Express, React, Node.js, Socket.io'],
         icon: 'link',
         link: "https://my-name-book.netlify.app/"
-    },
-    {
-        id: "3",
-        title: "Get It",
-        description: "A forum style discussion website. Features user-generated posts, comments, and persistent data storage via Google's Firestore.",
-        tags: ['JavaScript, React, Firebase, CSS'],
-        icon: 'link',
-        link: "https://gabeess.github.io/Get-It/"
     },
     {
         id: "3",
@@ -39,5 +31,21 @@ export default [
         tags: ['React, Vite, CSS'],
         icon: 'link',
         link: "https://gabeess.github.io/DiagramBuilderDemo/"
+    },
+    {
+        id: "4",
+        title: "To Do List",
+        description: "Simulates a post it note board. Drag and drop.",
+        tags: ['Typescript, Vite, Bootstrap'],
+        icon: 'link',
+        link: "https://gabeess.github.io/To-Do-List-Remake/"
+    },
+    {
+        id: "5",
+        title: "Get It",
+        description: "A forum style discussion website. Features user-generated posts, comments, and persistent data storage via Google's Firestore.",
+        tags: ['JavaScript, React, Firebase, CSS'],
+        icon: 'link',
+        link: "https://gabeess.github.io/Get-It/"
     },
 ] as ProjectItem[];
