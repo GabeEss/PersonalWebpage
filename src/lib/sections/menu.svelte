@@ -10,9 +10,9 @@
 
 <nav>
     <ul>
-        <li><a href="#about" on:click={(event) => handleClick(event, 'about')} id={selectedSection === 'about' ? 'selected' : undefined}>About</a></li>
-        <li><a href="#projects" on:click={(event) => handleClick(event, 'projects')} id={selectedSection === 'projects' ? 'selected' : undefined}>Projects</a></li>
-        <li><a href="#skills" on:click={(event) => handleClick(event, 'skills')} id={selectedSection === 'skills' ? 'selected' : undefined}>Skills</a></li>
+        <li><a href="#about" on:click={(event) => handleClick(event, 'about')} class:selected={selectedSection === 'about' ? 'selected' : undefined}>About</a></li>
+        <li><a href="#skills" on:click={(event) => handleClick(event, 'skills')} class:selected={selectedSection === 'skills' ? 'selected' : undefined}>Skills</a></li>
+        <li><a href="#projects" on:click={(event) => handleClick(event, 'projects')} class:selected={selectedSection === 'projects' ? 'selected' : undefined}>Projects</a></li>
     </ul>
 </nav>
 
@@ -50,7 +50,7 @@
 		// 	}   
     }
 
-    #selected {
+    .selected {
         z-index: 1;
         border-right: none;
         position: relative;
@@ -68,6 +68,12 @@
             animation: border-move 1.5s linear infinite;
             pointer-events: none;
             z-index: -1;
+
+            /* Safari optimizations */
+            transform: translate3d(0, 0, 0);
+            will-change: background-position;
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-backface-visibility: hidden;
         }
         //  &:hover {
         //         animation: rotate 1.5s infinite ease-in-out;
@@ -151,7 +157,7 @@
                 background: none;
             }
         }
-        #selected {
+        .selected {
             border-right: none;
             &::after{
                 border-right: 2px solid black;
