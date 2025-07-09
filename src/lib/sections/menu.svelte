@@ -11,7 +11,7 @@
 <nav>
     <ul>
         <li><a href="#about" on:click={(event) => handleClick(event, 'about')} class:selected={selectedSection === 'about' ? 'selected' : undefined}>About</a></li>
-        <li><a href="#skills" on:click={(event) => handleClick(event, 'skills')} class:selected={selectedSection === 'skills' ? 'selected' : undefined}>Skills</a></li>
+        <li><a href="#skills" on:click={(event) => handleClick(event, 'skills')} class:selected={selectedSection === 'skills' ? 'selected' : undefined}>Tech Stack</a></li>
         <li><a href="#projects" on:click={(event) => handleClick(event, 'projects')} class:selected={selectedSection === 'projects' ? 'selected' : undefined}>Projects</a></li>
     </ul>
 </nav>
